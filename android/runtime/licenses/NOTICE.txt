@@ -1,0 +1,99 @@
+ASTERION NATIVE PYTHON RUNTIME — THIRD-PARTY NOTICES
+
+This distribution includes the unmodified Chaquopy 17.2.0 Java/native bridge
+and prebuilt CPython 3.12.15 Android runtime for arm64-v8a and x86_64.
+The application's own Python runner and validator are separate original files.
+These notices accompany the vendored runtime and must be retained when it is
+redistributed. Individual license terms are reproduced in the adjacent files.
+Exact notice-source URLs are recorded in sources.json.
+
+Runtime and bridge
+
+* Chaquopy 17.2.0: MIT; Copyright (c) 2017-2025 Chaquo Ltd and contributors.
+  See Chaquopy-17.2.0-MIT.txt, fetched from the official 17.2.0 release tag.
+  Chaquopy's 12.0.1 changelog identifies the removal of license restrictions.
+  The vendored Maven artifacts require no activation key or paid service.
+
+* CPython 3.12.15: Python Software Foundation License Version 2 and historical
+  Python licenses. See CPython-3.12.15-LICENSE.txt and the complete upstream
+  CPython-3.12.15-licenses-documentation.txt for included-code acknowledgements.
+  The latter is the verbatim upstream Doc/license.rst text, retaining its
+  reStructuredText formatting. Additional component notices are included for
+  Expat, HACL* (MIT), and libmpdec (BSD-2-Clause).
+  Summary of upstream changes: these are Chaquopy's prebuilt Android binaries,
+  containing Android integration and CPython build patches from the Chaquopy
+  target/python directory. Asterion does not modify these binaries. Asterion
+  repackages the supplied standard library and native modules into APK assets
+  and adds its own Python runner and validator modules.
+
+* JetBrains annotations-java5 15.0: Apache License 2.0. The published 15.0 POM
+  identifies this license; annotations-java5-15.0-copyright.txt preserves the
+  original copyright/license headers from the exact Maven sources JAR.
+  annotations-java5-15.0-LICENSE.txt contains the official Apache 2.0 text.
+
+Native dependencies
+
+The Chaquopy Python 3.12 build recipe specifies bzip2 1.0.8, libffi 3.4.4,
+OpenSSL 3.5.9, SQLite 3.53.4, and xz 5.4.6. The downloaded target archives'
+OpenSSL and SQLite headers independently confirm versions 3.5.9 and 3.53.4.
+
+* OpenSSL 3.5.9: Apache License 2.0; see OpenSSL-3.5.9-LICENSE.txt.
+* SQLite 3.53.4: public domain; see SQLite-3.53.4-LICENSE.txt. That upstream
+  document also describes ancillary repository files which are not included
+  in the SQLite runtime binary.
+* libffi 3.4.4: MIT-style license; see libffi-3.4.4-LICENSE.txt.
+* bzip2 1.0.8: bzip2 license; see bzip2-1.0.8-LICENSE.txt.
+* liblzma from xz 5.4.6: public domain; see xz-5.4.6-COPYING.txt. Only liblzma
+  is used by Python's _lzma extension. The GPL/LGPL command-line scripts,
+  getopt code, and build tools discussed in that upstream notice are not
+  included as runtime programs by this application.
+* zlib: the native extension links Android's system libz.so. Its runtime is
+  supplied by Android rather than redistributed here. zlib-LICENSE.txt and
+  CPython's license documentation retain the upstream zlib acknowledgment.
+* CPython's bundled Expat: MIT; see CPython-3.12.15-Expat-COPYING.txt.
+* CPython's bundled libmpdec: BSD-2-Clause; see its license-header extract.
+* CPython's bundled HACL* SHA2 implementation: MIT; see its license-header
+  extract, including INRIA, CMU, Microsoft, and HACL* contributor copyrights.
+
+Bootstrap Python packages
+
+* pyelftools 0.26: public domain/Unlicense. Its embedded construct parser has
+  a separate MIT license. Both notices are reproduced.
+* setuptools 68.2.2's pkg_resources: MIT. The supplied bootstrap archive also
+  includes these vendored modules; their exact upstream license files from
+  setuptools v68.2.2 are reproduced in files beginning
+  setuptools-68.2.2-pkg_resources-_vendor-:
+    packaging 23.1 — Apache-2.0 or BSD-2-Clause;
+    platformdirs 2.6.2 — MIT;
+    typing_extensions 4.4.0 — PSF license;
+    jaraco.context 4.3.0 — MIT;
+    jaraco.functools 3.6.0 — MIT;
+    jaraco.text 3.7.0 — MIT;
+    more_itertools 9.1.0 — MIT;
+    importlib_resources 5.10.2 — Apache-2.0;
+    zipp 3.7.0 — MIT.
+  These are bootstrap dependencies, not separately installed user packages.
+
+CA certificate bundle
+
+Chaquopy 17.2.0 supplies cacert.pem from certifi/Mozilla's certificate store.
+The upstream release changelog identifies certifi 2026.10.23. The CA bundle
+is retained unchanged for runtime initialization. Its Mozilla Public License
+2.0 notice is in certifi-LICENSE.txt and the full license is in MPL-2.0.txt.
+The latter contains only the MPL text from Mozilla's official NSS COPYING
+document; the NSS runtime itself is not bundled by this application.
+Corresponding certificate source is available from certifi's source releases
+and https://github.com/certifi/python-certifi, and from Mozilla's certificate
+store at https://hg.mozilla.org/mozilla-central/file/tip/security/nss/lib/ckfw/builtins/certdata.txt.
+
+Upstream source locations
+
+Chaquopy: https://github.com/chaquo/chaquopy/tree/17.2.0
+CPython: https://github.com/python/cpython/tree/v3.12.15
+Maven artifacts: https://repo.maven.apache.org/maven2/com/chaquo/python/
+Native dependency builds: https://github.com/beeware/cpython-android-source-deps
+Setuptools: https://github.com/pypa/setuptools/tree/v68.2.2
+
+Runtime binaries and notice texts are included without warranty, under their
+respective upstream licenses. No Android SDK, emulator, or scratch probe APK
+is included in this runtime package.

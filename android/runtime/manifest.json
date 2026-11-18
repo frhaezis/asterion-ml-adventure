@@ -1,0 +1,288 @@
+{
+  "format": 1,
+  "pythonVersion": "3.12.15",
+  "chaquopyVersion": "17.2.0",
+  "abis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "runtimeArchive": "cpython-3.12.15-chaquopy-17.2.0-runtime.zip",
+  "jars": [
+    "chaquopy_java-17.2.0.jar",
+    "annotations-java5-15.0.jar"
+  ],
+  "files": {
+    "cpython-3.12.15-chaquopy-17.2.0-runtime.zip": {
+      "bytes": 18875910,
+      "sha256": "318babd5c0aaed5c660c2eb5e57b63fa1dd6e424cfae4b54e92492ab15f51be0"
+    },
+    "chaquopy_java-17.2.0.jar": {
+      "bytes": 33741,
+      "sha256": "9cf6f66ba74f89e334f9da3ffade49cfd3f48ed06030557299087216d7054c35"
+    },
+    "annotations-java5-15.0.jar": {
+      "bytes": 18613,
+      "sha256": "c84e6e9947f802ec2183bdc415dd496df02a749cac92e805f697e60f628a1e24"
+    },
+    "licenses/CPython-3.12.15-Expat-COPYING.txt": {
+      "bytes": 1144,
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    "licenses/CPython-3.12.15-HACL-LICENSE.txt": {
+      "bytes": 1207,
+      "sha256": "998ce04fb8ad9dedb0bc1b44938f8c3dcf1089780fa105ce1c8c30fb5554d78c"
+    },
+    "licenses/CPython-3.12.15-LICENSE.txt": {
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    "licenses/CPython-3.12.15-libmpdec-LICENSE.txt": {
+      "bytes": 1359,
+      "sha256": "b07528d8b1dbf1e2d2741052996f0876e23342ce2d30d0effa39c5457716c25a"
+    },
+    "licenses/CPython-3.12.15-licenses-documentation.txt": {
+      "bytes": 54130,
+      "sha256": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5"
+    },
+    "licenses/Chaquopy-17.2.0-MIT.txt": {
+      "bytes": 1076,
+      "sha256": "345a9fdfeed355d37b18569ef277ba56eb0ab7c0b17a08a90163ce8d33d2b862"
+    },
+    "licenses/MPL-2.0.txt": {
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    "licenses/NOTICE.txt": {
+      "bytes": 5466,
+      "sha256": "1941b6c19063eb4486488d9de6294052bb93ab7d6251e5fa715260d8231b3eb3"
+    },
+    "licenses/OpenSSL-3.5.9-LICENSE.txt": {
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    "licenses/SQLite-3.53.4-LICENSE.txt": {
+      "bytes": 3850,
+      "sha256": "ee6af51062b30d532991face5164136ae6f84e265ecf8abe89dc69dac45ca1e7"
+    },
+    "licenses/annotations-java5-15.0-LICENSE.txt": {
+      "bytes": 11352,
+      "sha256": "8c1e966c7855fb54027bcaf6ebe7a43abe4785791e8cf9148c363761d493d097"
+    },
+    "licenses/annotations-java5-15.0-copyright.txt": {
+      "bytes": 4539,
+      "sha256": "3470cb361744c51bc865c18617ae323b1912fd8d1f9f328436cfb999b17270fe"
+    },
+    "licenses/annotations-java5-15.0.pom.txt": {
+      "bytes": 5495,
+      "sha256": "1d38d94fa87f5ef333dac85481140de8a0252f39ce637c89ba14296dcdbc1d8f"
+    },
+    "licenses/bzip2-1.0.8-LICENSE.txt": {
+      "bytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    "licenses/certifi-LICENSE.txt": {
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    "licenses/libffi-3.4.4-LICENSE.txt": {
+      "bytes": 1132,
+      "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388"
+    },
+    "licenses/pyelftools-0.26-LICENSE.txt": {
+      "bytes": 1534,
+      "sha256": "ae18bf4cb82f92af7547259177bc28bc48e4fc732518bcedfe690226288d3445"
+    },
+    "licenses/pyelftools-0.26-construct-LICENSE.txt": {
+      "bytes": 1082,
+      "sha256": "f8d0c347a0dcc6ebe1671640dfae8d2411b6ded892e06a6764f8208b218b2af4"
+    },
+    "licenses/setuptools-68.2.2-LICENSE.txt": {
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-importlib_resources-5.10.2.dist-info-LICENSE.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-jaraco.context-4.3.0.dist-info-LICENSE.txt": {
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-jaraco.functools-3.6.0.dist-info-LICENSE.txt": {
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-jaraco.text-3.7.0.dist-info-LICENSE.txt": {
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-more_itertools-9.1.0.dist-info-LICENSE.txt": {
+      "bytes": 1053,
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-packaging-23.1.dist-info-LICENSE.APACHE.txt": {
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-packaging-23.1.dist-info-LICENSE.BSD.txt": {
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-packaging-23.1.dist-info-LICENSE.txt": {
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-platformdirs-2.6.2.dist-info-licenses-LICENSE.txt": {
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-typing_extensions-4.4.0.dist-info-LICENSE.txt": {
+      "bytes": 12787,
+      "sha256": "c7afb65e755707b9fb90487389a176d3ed3d0031d5131afde45c23715ff5e891"
+    },
+    "licenses/setuptools-68.2.2-pkg_resources-_vendor-zipp-3.7.0.dist-info-LICENSE.txt": {
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    "licenses/setuptools-68.2.2-vendor.txt": {
+      "bytes": 262,
+      "sha256": "becf62b3611811e848a7a235e3a52228bfbd2c3e0cc76a4fb2b3331bea8423a8"
+    },
+    "licenses/sources.json": {
+      "bytes": 5029,
+      "sha256": "5f4cee01b46e670d2771984483d15acce67f7b61fa6b2e06cf7823195ea4b5d7"
+    },
+    "licenses/xz-5.4.6-COPYING.txt": {
+      "bytes": 3347,
+      "sha256": "29a1e305b2e34eefe5d4602d00cde1d528b71c5d9f2eec5106972cf6ddb6f73f"
+    },
+    "licenses/zlib-LICENSE.txt": {
+      "bytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    }
+  },
+  "archiveEntries": {
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_bz2.cpython-312.so": "9ea3a69dd949024affd3a8fb84d6612258c6dc84a64a8d3c192052bc6d3355e9",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_ctypes.cpython-312.so": "e980193de6b5b4210cb44ab8412f0df0e211847f946be36ec673b45551b23f6a",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_datetime.cpython-312.so": "01667130a098e4022848cbb69fe7b5d74d67a687b513758b5a25caf922d3b07e",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_lzma.cpython-312.so": "5c12d2eecd79b8edef80771321484159f2148c62ba8315cd488065cf69419f99",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_random.cpython-312.so": "c606579508a270be6e2b0aacc58302dde96bdd1843d17b993b866772880f0447",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_sha2.cpython-312.so": "f5e05106406a4d937ef8f1ee24181931bdc686c13da1a16ab8689d792631bc9c",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/_struct.cpython-312.so": "f0db27179e9d6abcf36d831d8a4576d8597e3fabc2802bae29b1a5b3ed910de4",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/binascii.cpython-312.so": "ddfd1389eeb2d86333aa2b9b612c290c5d5d28e5226b57598422a6d429f9a2d3",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/java/chaquopy.so": "61c6d213f0ea3aaa932f8c72d7efdde262a9a249adbd56b7233b179aa53e0e62",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/math.cpython-312.so": "8565b60a1a1abed30aba6b107b8e240c0dd1998f07f4579cc367ce9fe5458408",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/mmap.cpython-312.so": "b33936b6761094939a3c32da9dbe8847b3520c0337163199f1311c8db5393977",
+    "assets/chaquopy/bootstrap-native/arm64-v8a/zlib.cpython-312.so": "4fa36b3c26d8f459a3e33a96768a60c68971248e8bf3d8852a0af1d508fa339e",
+    "assets/chaquopy/bootstrap-native/x86_64/_bz2.cpython-312.so": "50ada1924d39eda7623d9a09322b3906fa58972e43650ca7ce3099bc8a1498cf",
+    "assets/chaquopy/bootstrap-native/x86_64/_ctypes.cpython-312.so": "e7fc9458104ccf604f48e67366431f62335fa87bcef51f1714630fc9b1bb5275",
+    "assets/chaquopy/bootstrap-native/x86_64/_datetime.cpython-312.so": "4558b7d373f297a0bd982b27916a852d9f2655ed2454bc94864ceda06d63b274",
+    "assets/chaquopy/bootstrap-native/x86_64/_lzma.cpython-312.so": "ca3bac5df4717b4b99ac1f8f28e22a8023536a85b1250b9fb5f7f3b9588a6dc8",
+    "assets/chaquopy/bootstrap-native/x86_64/_random.cpython-312.so": "c158ac58736d8a7f42737de14f93c645ffc7f1bfc7080f033fe6a3a712babf8b",
+    "assets/chaquopy/bootstrap-native/x86_64/_sha2.cpython-312.so": "f45679d0b80a21419b6dbb14ba85ca9d576f2025c55b53d1651a146fbcb907fb",
+    "assets/chaquopy/bootstrap-native/x86_64/_struct.cpython-312.so": "76993a645c5e8ff78c7b75a9dcb22fd0a0e3d914a004e05cfc3661a51ee2374f",
+    "assets/chaquopy/bootstrap-native/x86_64/binascii.cpython-312.so": "83f9b4035168f57bcdee303ab5a593bb4cc6eaf1a512c26790828ec095ead799",
+    "assets/chaquopy/bootstrap-native/x86_64/java/chaquopy.so": "3eb9779813fe9daad3875162b3b454b583bdbfcc743da939fe4230ab2ce9d238",
+    "assets/chaquopy/bootstrap-native/x86_64/math.cpython-312.so": "b15a90845343b7d50672d6faf2d127362d246a7611fe85165e0c5cbf141ee5a0",
+    "assets/chaquopy/bootstrap-native/x86_64/mmap.cpython-312.so": "8ffed5bdd5b61069e477e00898654324dc7e3a6ddb864c5a6d2535a088bcb4db",
+    "assets/chaquopy/bootstrap-native/x86_64/zlib.cpython-312.so": "d9a2e79b03238f7040d37b672c079de45d82080553825ab7a73bae692bbb6dc2",
+    "assets/chaquopy/bootstrap.imy": "da5aa1a1de142b86031c16a0c4cfac625aaa69d2175a09ae65a9234de5f7c79b",
+    "assets/chaquopy/cacert.pem": "2ef52ad56b4803e264045c915e55c236cbfa045b84b81efefc218a19eb44bd2b",
+    "assets/chaquopy/requirements-common.imy": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
+    "assets/chaquopy/stdlib-arm64-v8a.imy": "87540639f874b03f8a1f76b2c27de5431136cf603167e68b319d6c0f33bb82eb",
+    "assets/chaquopy/stdlib-common.imy": "3d2c518265718355b4ddbb7bb7a0fced519699c3184501185d2ed3150c3e9b06",
+    "assets/chaquopy/stdlib-x86_64.imy": "f2bfeccf3704ad96b98b6c800ef55cf545f5902e8c7af54abdd365ef952c969a",
+    "lib/arm64-v8a/libchaquopy_java.so": "44f186f4a4daf1c65acabf0803703f41f7d2748799e8e94ba73217b7ba7b14a1",
+    "lib/arm64-v8a/libcrypto_chaquopy.so": "766c1744b32da624ca78d3996806b43631f28222576ba80bb5688e5c3041f0be",
+    "lib/arm64-v8a/libcrypto_python.so": "e13734377377603cda9c2ea6d6171fc4d639d8a0768050a8a22cdaa3b40f0ece",
+    "lib/arm64-v8a/libpython3.12.so": "0c57a3036f7578e3236ec995ce0931922e708bc108a638a4b27fab5a001f3421",
+    "lib/arm64-v8a/libpython3.so": "025d16ae19208efd5b430491362b3ad84481279af2fcc9394fd9acd3f9dbdeac",
+    "lib/arm64-v8a/libsqlite3_chaquopy.so": "1e348dceef9c46754e6be14f2a58e6d34441afb03974b36fa0710f8ee50ebf2d",
+    "lib/arm64-v8a/libsqlite3_python.so": "e8c9c26012244a175013d17188a65300abedb946bd959b5b59fc19b63dfb92b9",
+    "lib/arm64-v8a/libssl_chaquopy.so": "024d7a7696e789443642645df35929994aa8a4a3cb4d46b2fe7415d64f9a2282",
+    "lib/arm64-v8a/libssl_python.so": "c54e3be0d21c43d908b0891d8c8775785f4045c168d21105b7284f8895383944",
+    "lib/x86_64/libchaquopy_java.so": "5af9f3f9df656d0ed2e15229d53927d61687478868e48d384b7b5384d9f73f29",
+    "lib/x86_64/libcrypto_chaquopy.so": "b582c9ede7b21e16bfbd05ad7ad6fc428e785035a6f222810a9bee52966b6e66",
+    "lib/x86_64/libcrypto_python.so": "6ea087b40b65deb40cc9b1763e823b5a89f23a7570e723411968329099fc51dd",
+    "lib/x86_64/libpython3.12.so": "9cf17a7870a2bc27be6178bbd608429a85edca0fa3acdb6d7e52caca005770bb",
+    "lib/x86_64/libpython3.so": "c4c052abce0b1972c5cd2238049cc78457f9e9394e51c0371c3aefac54e5461b",
+    "lib/x86_64/libsqlite3_chaquopy.so": "fbaa66914e0971e119c50e7eca3df8593d1c59cdc1c7b045815b8bf06f1868ee",
+    "lib/x86_64/libsqlite3_python.so": "03fbc586626baa1952bdfba93f43ae4f11f965c613d329784742f4dd4f97917a",
+    "lib/x86_64/libssl_chaquopy.so": "4a3f2907be854faf1a7def9209489e65045a0a52fb1080aa6b0af85feac34fee",
+    "lib/x86_64/libssl_python.so": "3f33b8221d4a8efe0f0891d95b3e29f38225e35a9e4ce725c1d9a7601cf13ef9"
+  },
+  "provenance": {
+    "repository": "https://repo.maven.apache.org/maven2/",
+    "chaquopySource": "https://github.com/chaquo/chaquopy/tree/17.2.0",
+    "packagingSource": "product/gradle-plugin/src/main/kotlin/PythonTasks.kt",
+    "transformations": [
+      "Copy bootstrap-17.2.0-3.12.imy unchanged to assets/chaquopy/bootstrap.imy.",
+      "Rename target-3.12.15-0-stdlib-pyc.zip to assets/chaquopy/stdlib-common.imy.",
+      "Extract target ZIP jniLibs/<abi>/*.so to lib/<abi> without changing content; discard build headers.",
+      "Rename JNI runtime shared library artifact to lib/<abi>/libchaquopy_java.so.",
+      "Extract bootstrap stdlib extensions to assets/chaquopy/bootstrap-native/<abi> with original names.",
+      "Bootstrap modules for Python3.12: _bz2,_ctypes,_datetime,_lzma,_random,_sha2,_struct,binascii,math,mmap,zlib.",
+      "Zip remaining target lib-dynload/<abi> modules at archive root into stdlib-<abi>.imy.",
+      "Rename Python runtime module artifact to bootstrap-native/<abi>/java/chaquopy.so.",
+      "Copy com/chaquo/python/cacert.pem from gradle-17.2.0.jar; include empty requirements-common.imy.",
+      "App Python sources and build.json are generated afresh by tools/stage_native_python.py."
+    ],
+    "sourceArtifacts": {
+      "bootstrap.imy": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/bootstrap/17.2.0/bootstrap-17.2.0-3.12.imy",
+        "bytes": 600348,
+        "sha256": "da5aa1a1de142b86031c16a0c4cfac625aaa69d2175a09ae65a9234de5f7c79b"
+      },
+      "target-stdlib-pyc.zip": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/target/3.12.15-0/target-3.12.15-0-stdlib-pyc.zip",
+        "bytes": 4334340,
+        "sha256": "3d2c518265718355b4ddbb7bb7a0fced519699c3184501185d2ed3150c3e9b06"
+      },
+      "annotations.jar": {
+        "url": "https://repo.maven.apache.org/maven2/org/jetbrains/annotations-java5/15.0/annotations-java5-15.0.jar",
+        "bytes": 18613,
+        "sha256": "c84e6e9947f802ec2183bdc415dd496df02a749cac92e805f697e60f628a1e24"
+      },
+      "target-arm64-v8a.zip": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/target/3.12.15-0/target-3.12.15-0-arm64-v8a.zip",
+        "bytes": 7376620,
+        "sha256": "bcc3cb4edcff25c8c3103cf45ea35b66ef0a728bb2b3e7731d3c045093ff6d39"
+      },
+      "libchaquopy_java-arm64-v8a.so": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/libchaquopy_java/17.2.0/libchaquopy_java-17.2.0-3.12-arm64-v8a.so",
+        "bytes": 158664,
+        "sha256": "44f186f4a4daf1c65acabf0803703f41f7d2748799e8e94ba73217b7ba7b14a1"
+      },
+      "chaquopy-arm64-v8a.so": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/chaquopy/17.2.0/chaquopy-17.2.0-3.12-arm64-v8a.so",
+        "bytes": 787968,
+        "sha256": "61c6d213f0ea3aaa932f8c72d7efdde262a9a249adbd56b7233b179aa53e0e62"
+      },
+      "target-x86_64.zip": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/target/3.12.15-0/target-3.12.15-0-x86_64.zip",
+        "bytes": 7619831,
+        "sha256": "83a977b2b4b1bdb9c8a5a65571bf0ff865777ec8cfcc593de6696a6aaf859a60"
+      },
+      "libchaquopy_java-x86_64.so": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/libchaquopy_java/17.2.0/libchaquopy_java-17.2.0-3.12-x86_64.so",
+        "bytes": 163480,
+        "sha256": "5af9f3f9df656d0ed2e15229d53927d61687478868e48d384b7b5384d9f73f29"
+      },
+      "chaquopy-x86_64.so": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/chaquopy/17.2.0/chaquopy-17.2.0-3.12-x86_64.so",
+        "bytes": 829800,
+        "sha256": "3eb9779813fe9daad3875162b3b454b583bdbfcc743da939fe4230ab2ce9d238"
+      },
+      "java.jar": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/runtime/chaquopy_java/17.2.0/chaquopy_java-17.2.0.jar",
+        "bytes": 33741,
+        "sha256": "9cf6f66ba74f89e334f9da3ffade49cfd3f48ed06030557299087216d7054c35"
+      },
+      "gradle.jar": {
+        "url": "https://repo.maven.apache.org/maven2/com/chaquo/python/gradle/17.2.0/gradle-17.2.0.jar",
+        "bytes": 2127174,
+        "sha256": "c2a057a7aaa8946400f75f9d3c7400ec92b9833c7101605c47c25af02799ed16"
+      }
+    }
+  }
+}

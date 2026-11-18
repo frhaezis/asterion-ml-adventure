@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Asterion · Elf Beauties · V2</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">#071b22</item>
+        <item name="android:colorAccent">#75dec2</item>
+        <item name="android:navigationBarColor">#071b22</item>
+        <item name="android:statusBarColor">#071b22</item>
+    </style>
+</resources>
