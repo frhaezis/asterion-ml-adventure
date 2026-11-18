@@ -1,0 +1,40 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+local.properties
+settings.properties
+
+# Android / Java build outputs
+.gradle/
+build/
+dist/
+*.class
+*.apk
+*.aab
+
+# Signing keys
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# Generated reports and releases
+artifacts/
+release/
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
