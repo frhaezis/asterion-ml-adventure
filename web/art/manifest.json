@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "backgrounds": [
+    {
+      "id": "arrival",
+      "title": "Сад первого света",
+      "chapterIds": [
+        1,
+        2
+      ],
+      "src": "art/elf-scenes-a.png",
+      "position": "0% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "archive",
+      "title": "Изумрудный архив",
+      "chapterIds": [
+        5,
+        6
+      ],
+      "src": "art/elf-scenes-a.png",
+      "position": "100% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "moonbridge",
+      "title": "Лунные мосты",
+      "chapterIds": [
+        8
+      ],
+      "src": "art/elf-scenes-a.png",
+      "position": "0% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "observatory",
+      "title": "Звёздная обсерватория",
+      "chapterIds": [
+        4
+      ],
+      "src": "art/elf-scenes-a.png",
+      "position": "100% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1
+      }
+    },
+    {
+      "id": "greenhouse",
+      "title": "Живая оранжерея",
+      "chapterIds": [
+        3
+      ],
+      "src": "art/elf-scenes-b.png",
+      "position": "0% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "crystal-lab",
+      "title": "Кристальная лаборатория",
+      "chapterIds": [
+        7
+      ],
+      "src": "art/elf-scenes-b.png",
+      "position": "100% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "sky-station",
+      "title": "Станция над облаками",
+      "chapterIds": [
+        9
+      ],
+      "src": "art/elf-scenes-b.png",
+      "position": "0% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "council-garden",
+      "title": "Сад утреннего совета",
+      "chapterIds": [
+        10
+      ],
+      "src": "art/elf-scenes-b.png",
+      "position": "100% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1
+      }
+    }
+  ],
+  "portraits": [
+    {
+      "id": "iris",
+      "name": "Ирис",
+      "role": "Исследовательница моделей",
+      "src": "art/elf-portraits.png",
+      "position": "0% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "eyla",
+      "name": "Эйла",
+      "role": "Архивистка и инженер агентов",
+      "src": "art/elf-portraits.png",
+      "position": "100% 0%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 0
+      }
+    },
+    {
+      "id": "mira",
+      "name": "Мира",
+      "role": "Инженер надёжности",
+      "src": "art/elf-portraits.png",
+      "position": "0% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "selena",
+      "name": "Селена",
+      "role": "Исследовательница нейросетей",
+      "src": "art/elf-portraits.png",
+      "position": "100% 100%",
+      "size": "200% 200%",
+      "atlas": {
+        "cols": 2,
+        "rows": 2,
+        "col": 1,
+        "row": 1
+      }
+    }
+  ]
+}

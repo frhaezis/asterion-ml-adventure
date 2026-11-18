@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#131629"><title>asterion. elf beauties teach me all about Machine Learning. V2</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131629'/%3E%3Cpath d='M32 6L52 52H43L32 26L21 52H12Z' fill='%23dfc28a'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="game">
+ <div id="worldBackdrop" aria-hidden="true"></div><div class="world-vignette" aria-hidden="true"></div>
+ <canvas id="world" tabindex="0" aria-label="Сад Астериона: прогулка между встречами"></canvas>
+ <header id="hud"><button id="homeButton" class="brand" aria-label="Главный экран"><span>Λ</span> АСТЕРИОН <small>V2</small></button><div class="mission-ribbon"><span id="chapterName">ПИСЬМА ИЗ ЖИВОГО САДА</span><strong id="levelTitle">История начинается</strong></div><nav><button id="galleryButton" class="icon-button" aria-label="Персонажи и воспоминания">♡</button><button id="mapButton" class="icon-button" aria-label="Карта глав">◇</button><button id="pauseButton" class="icon-button" aria-label="Пауза"><span class="pause-symbol" aria-hidden="true"></span></button></nav></header>
+ <div id="objectiveCard"><span class="eyebrow" id="locationName">АСТЕРИОН · САДЫ</span><p id="objective">Откройте первую встречу</p><button id="findConsole">Пройти к месту встречи →</button></div>
+ <div id="toast" role="status"></div>
+ <div id="joystick" aria-label="Джойстик движения"><div class="joy-ring"></div><div id="joyKnob"></div><span>ПРОГУЛКА</span></div>
+ <button id="interact" class="interact">Продолжить историю <span>→</span></button>
+ <footer id="worldFooter"><span id="saveStatus">Подготовка…</span><span id="worldHint">Коснитесь дорожки · WASD / джойстик</span><span id="activeTime">0 мин</span></footer>
+</div>
+<div id="overlay" hidden><section id="panel" role="dialog" aria-modal="true" aria-labelledby="panelTitle"><div class="panel-close-wrap"><button id="closePanel" class="panel-close" aria-label="Закрыть">×</button></div><div id="panelBody"></div></section></div>
+<div id="notification" role="alert" hidden></div>
+<input id="saveFileInput" type="file" accept=".json,application/json" hidden>
+<script type="module" src="js/app.js"></script>
+</body></html>

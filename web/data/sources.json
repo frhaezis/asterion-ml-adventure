@@ -1,0 +1,865 @@
+{
+  "version": 2,
+  "checkedAt": "2026-11-16",
+  "note": "Реестр V2: 45 ранее зарегистрированных источников с сохранённым происхождением и 7 новых записей. Прочитаны обозначенные разделы новых ресурсов; полный аудит всех внешних сайтов не заявляется. Android исполняет CPython через Chaquopy; Pyodide оставлен для браузерного режима. Необходимые определения, примеры и условия находятся офлайн в игре; внешние ссылки нужны для углубления. Иллюстрации источников не копировались.",
+  "sources": [
+    {
+      "id": "python-data-structures",
+      "title": "Data Structures",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Списки, стек, очередь, множества, словарь и обход коллекций.",
+      "readScope": "Lists as Stacks; Lists as Queues; Dictionaries; Looping Techniques",
+      "caveat": "В учебных алгоритмах отдельно учитываются предварительные условия и сложность; наличие словаря не гарантирует worst-case O(1).",
+      "related": [
+        {
+          "title": "bisect — Array bisection algorithm",
+          "url": "https://docs.python.org/3/library/bisect.html",
+          "readScope": "Introduction; bisect_left partition invariant",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "pandas-basics",
+      "title": "How do I select a subset of a DataFrame?",
+      "url": "https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html",
+      "publisher": "pandas",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "DataFrame/Series; выбор колонок; boolean filtering; форма таблицы.",
+      "readScope": "Specific columns; filtering rows",
+      "caveat": "Данные Titanic из источника не включены в игру; используются собственные маленькие таблицы.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "numpy-basics",
+      "title": "NumPy: the absolute basics for beginners",
+      "url": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+      "publisher": "NumPy",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Массивы, shape, axis, dtype, срезы, elementwise operations и broadcasting.",
+      "readScope": "What is an array?; Array fundamentals; Array attributes; Basic array operations; Broadcasting",
+      "caveat": "Elementwise multiplication не совпадает с матричным произведением; срез NumPy часто является view.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "sklearn-pitfalls",
+      "title": "Common pitfalls and recommended practices",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "publisher": "scikit-learn",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Разделение данных до обучения преобразований; fit только на train; transform на остальных данных; Pipeline против утечки.",
+      "readScope": "Inconsistent preprocessing; Data leakage; How to avoid data leakage",
+      "caveat": "Pipeline помогает только при корректном разбиении; временная и групповая утечки требуют подходящей схемы split.",
+      "related": [
+        {
+          "title": "Imputation of missing values",
+          "url": "https://scikit-learn.org/stable/modules/impute.html",
+          "readScope": "Introduction; SimpleImputer",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "sklearn-metrics",
+      "title": "Metrics and scoring: quantifying the quality of predictions",
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html",
+      "publisher": "scikit-learn",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Precision, recall, F1, confusion matrix; выбор метрики в соответствии с ценой ошибки.",
+      "readScope": "Which scoring function should I use?; Precision, recall and F-measures; Binary classification",
+      "caveat": "Порог меняет рабочую точку; высокая accuracy сама по себе не доказывает качество на редком классе.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "sklearn-supervised",
+      "title": "Supervised learning",
+      "url": "https://scikit-learn.org/stable/supervised_learning.html",
+      "publisher": "scikit-learn",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Семейства supervised-моделей; линейная регрессия, SVM, деревья, ансамбли.",
+      "readScope": "Обзор главы и релевантные введения связанных страниц",
+      "caveat": "Обзор не означает, что один алгоритм подходит всем задачам. XGBoost, LightGBM и CatBoost все поддерживают разные настройки; сходство или преимущество проверяется на своей задаче, а не по бренду.",
+      "related": [
+        {
+          "title": "Linear Models",
+          "url": "https://scikit-learn.org/stable/modules/linear_model.html",
+          "readScope": "Ordinary Least Squares; Ridge; Lasso; Logistic regression; binary formula",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Support Vector Machines",
+          "url": "https://scikit-learn.org/stable/modules/svm.html",
+          "readScope": "Introduction; Classification",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Decision Trees",
+          "url": "https://scikit-learn.org/stable/modules/tree.html",
+          "readScope": "Introduction; advantages and limitations",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Ensembles",
+          "url": "https://scikit-learn.org/stable/modules/ensemble.html",
+          "readScope": "Introduction; Gradient-boosted trees; Random Forests",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Introduction to Boosted Trees — XGBoost",
+          "url": "https://xgboost.readthedocs.io/en/stable/tutorials/model.html",
+          "readScope": "Introduction; training loss plus regularization",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Features — LightGBM",
+          "url": "https://lightgbm.readthedocs.io/en/stable/Features.html",
+          "readScope": "Histogram algorithm; leaf-wise growth; categorical features",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "How training is performed — CatBoost",
+          "url": "https://catboost.ai/docs/en/concepts/algorithm-main-stages",
+          "readScope": "Overview; consecutive trees; categorical feature stage",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Nearest Neighbors",
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html",
+          "readScope": "Introduction; neighbors-based classification and regression",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Naive Bayes",
+          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html",
+          "readScope": "Introduction; conditional independence assumption; probability caveat",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "CatBoost: unbiased boosting with categorical features",
+          "url": "https://arxiv.org/abs/1706.09516",
+          "readScope": "Abstract: ordered boosting and categorical features",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Categorical features — CatBoost",
+          "url": "https://catboost.ai/docs/en/features/categorical-features",
+          "readScope": "Categorical support; internal feature transformations; one-hot conditions",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "sklearn-unsupervised",
+      "title": "Unsupervised learning",
+      "url": "https://scikit-learn.org/stable/unsupervised_learning.html",
+      "publisher": "scikit-learn",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Различие кластеризации и задачи с целевой меткой; K-means, DBSCAN, PCA как семейства.",
+      "readScope": "Обзор главы; Clustering introduction, K-means and DBSCAN",
+      "caveat": "Кластеры не становятся истинными классами автоматически; масштаб признаков и расстояние влияют на результат.",
+      "related": [
+        {
+          "title": "Clustering",
+          "url": "https://scikit-learn.org/stable/modules/clustering.html",
+          "readScope": "Overview; K-means; DBSCAN",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Principal component analysis",
+          "url": "https://scikit-learn.org/stable/modules/decomposition.html",
+          "readScope": "Exact PCA; centering without scaling",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "sklearn-model-selection",
+      "title": "Cross-validation: evaluating estimator performance",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+      "publisher": "scikit-learn",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Роли train, validation и test; k-fold CV; опасность настройки модели по test.",
+      "readScope": "Введение, validation holdout и описание k-fold",
+      "caveat": "Обычная случайная CV не подходит автоматически временным и связанным наблюдениям.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "pytorch-quickstart",
+      "title": "Quickstart",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html",
+      "publisher": "PyTorch",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "nn.Module, DataLoader, loss, backward, optimizer.step, zero_grad; train/eval и no_grad.",
+      "readScope": "Optimizing Model Parameters; training loop; test loop",
+      "caveat": "Учебные примеры игры используют маленькие синтетические данные и CPU; они не воспроизводят benchmark из документации.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "pytorch-autograd",
+      "title": "Automatic Differentiation with torch.autograd",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+      "publisher": "PyTorch",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "requires_grad, вычислительный граф, backward, .grad, накопление градиентов, no_grad и detach.",
+      "readScope": "Computing Gradients; Disabling Gradient Tracking; More on Computational Graphs",
+      "caveat": "backward вычисляет градиенты; сами веса обновляет optimizer. Градиенты нелистовых узлов можно сохранять специально, это не поведение по умолчанию.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "pytorch-losses",
+      "title": "CrossEntropyLoss",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CrossEntropyLoss.html",
+      "publisher": "PyTorch",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "CrossEntropyLoss принимает logits; варианты целевых индексов и распределений; связь с LogSoftmax и NLLLoss.",
+      "readScope": "Описание входов и targets; формулы; note on LogSoftmax",
+      "caveat": "Для обычной многоклассовой классификации перед CrossEntropyLoss не нужно отдельно применять softmax к входу. Contrastive loss — семейство функций, а не одно название API; в упражнениях явно задано соглашение о метках пары.",
+      "related": [
+        {
+          "title": "MSELoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.MSELoss.html",
+          "readScope": "Formula; reduction; tensor shapes",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "CosineEmbeddingLoss",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.CosineEmbeddingLoss.html",
+          "readScope": "Pair labels; cosine and margin loss formula",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+          "url": "https://arxiv.org/abs/2002.05709",
+          "readScope": "Abstract",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "pytorch-normalization",
+      "title": "LayerNorm",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.LayerNorm.html",
+      "publisher": "PyTorch",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "LayerNorm нормализует последние normalized_shape измерения; сравнение с BatchNorm и роль train/eval.",
+      "readScope": "Formula, normalized_shape, statistics in train/eval; BatchNorm1d formula and running statistics",
+      "caveat": "BatchNorm обычно использует running statistics в eval; при track_running_stats=False поведение другое.",
+      "related": [
+        {
+          "title": "BatchNorm1d",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.BatchNorm1d.html",
+          "readScope": "Formula; running statistics; track_running_stats",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Dropout",
+          "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.Dropout.html",
+          "readScope": "Training zeroing probability; scaling; evaluation identity",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "transformer-paper",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "publisher": "Vaswani et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Scaled dot-product attention, Q/K/V, масштаб 1/sqrt(d_k), multi-head attention.",
+      "readScope": "Abstract; section 3.2, especially 3.2.1 and 3.2.2",
+      "caveat": "Метафора внимания в игре не утверждает наличие человеческого сознания; наиболее высокий вес внимания не является доказательством причинности.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-tokenizers",
+      "title": "Tokenization algorithms",
+      "url": "https://huggingface.co/docs/transformers/main/en/tokenizer_summary",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Токены и subword-разбиение; BPE, WordPiece и Unigram; словарь и зависимость разбиения от tokenizer.",
+      "readScope": "Introduction; Byte pair encoding",
+      "caveat": "Токен не равен слову; приведённое разбиение является учебным и зависит от конкретного словаря. Страница main может меняться.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-architectures",
+      "title": "Transformer Architectures",
+      "url": "https://huggingface.co/learn/llm-course/chapter1/6",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Различие encoder-only, decoder-only и encoder-decoder; типичные задачи и causal attention.",
+      "readScope": "Introduction; Encoder models; Decoder models",
+      "caveat": "Это распространённые архитектурные семейства, а не исчерпывающая классификация всех моделей.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-kv-cache",
+      "title": "How caching works",
+      "url": "https://huggingface.co/docs/transformers/cache_explanation",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Повторное использование K/V прошлых токенов во время autoregressive inference; цена памяти.",
+      "readScope": "Introduction; Attention matrices",
+      "caveat": "KV cache не база знаний и не долгосрочная память агента; его применение и размер зависят от архитектуры.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-generation",
+      "title": "Generation strategies",
+      "url": "https://huggingface.co/docs/transformers/generation_strategies",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Greedy decoding, sampling и beam search; generate и max_new_tokens. Temperature меняет распределение logits, top-k ограничивает число кандидатов, top-p ограничивает накопленную вероятность.",
+      "readScope": "Basic decoding methods: Greedy search, Sampling, Beam search",
+      "caveat": "Случайность декодирования не измеряет истинность; remote custom generation из документации игра не загружает.",
+      "related": [
+        {
+          "title": "GenerationConfig",
+          "url": "https://huggingface.co/docs/transformers/main_classes/text_generation",
+          "readScope": "Output length; generation strategy; temperature, top_k, top_p",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Prompt engineering",
+          "url": "https://huggingface.co/docs/transformers/main/tasks/prompting",
+          "readScope": "Introduction; Best practices; Few-shot prompting and chat templates",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-sft",
+      "title": "SFT Trainer",
+      "url": "https://huggingface.co/docs/trl/sft_trainer",
+      "publisher": "Hugging Face TRL",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Обучение на примерах; language-modeling и prompt-completion datasets; conversational format и chat template.",
+      "readScope": "Overview; Expected dataset type and format",
+      "caveat": "В игре SFT объясняется на небольших примерах: полноценное дообучение внешней LLM не требуется.",
+      "related": [
+        {
+          "title": "Chat templates",
+          "url": "https://huggingface.co/docs/transformers/chat_templating",
+          "readScope": "Token sequence; roles and control tokens; model-specific templates",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "peft-lora",
+      "title": "LoRA",
+      "url": "https://huggingface.co/docs/peft/v0.21.0/package_reference/lora",
+      "publisher": "Hugging Face PEFT",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Ранг адаптера, target_modules, lora_alpha и число обучаемых параметров.",
+      "readScope": "LoRA usage; rank and alpha; LoraConfig parameter reference",
+      "caveat": "Конкретные названия target_modules зависят от архитектуры; адаптеры должны соответствовать базовой модели.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "qlora-paper",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "publisher": "Dettmers et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Замороженная 4-bit база и обучаемые LoRA-адаптеры; NF4, double quantization, paged optimizers.",
+      "readScope": "Abstract",
+      "caveat": "Показатели статьи относятся к её экспериментам; гарантия одинакового качества для любой модели не следует из результатов.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "dpo-paper",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "url": "https://arxiv.org/abs/2305.18290",
+      "publisher": "Rafailov et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Обучение по парам предпочтений; отличие DPO от SFT и от схемы с отдельной reward model и PPO.",
+      "readScope": "Abstract",
+      "caveat": "Предпочтение в датасете не является гарантией объективной истинности или безопасности ответа.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "hf-quantization",
+      "title": "Quantization overview",
+      "url": "https://huggingface.co/docs/transformers/quantization/overview",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Меньшая битность весов/активаций; компромисс памяти, скорости и качества; загрузка квантованных checkpoints. GGUF как формат контейнера, а не отдельная битность.",
+      "readScope": "Overview; Two ways to use a quantized model; Quantize a model while loading",
+      "caveat": "Память на веса не равна полной RAM/VRAM: есть cache, activations, metadata и runtime. Ускорение зависит от железа и kernels.",
+      "related": [
+        {
+          "title": "GGUF specification",
+          "url": "https://raw.githubusercontent.com/ggml-org/ggml/master/docs/gguf.md",
+          "readScope": "Introduction; specification goals; metadata",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "distillation",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "publisher": "Hinton, Vinyals and Dean",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Передача поведения teacher/ensemble компактному student; отличие от уменьшения битности.",
+      "readScope": "Abstract",
+      "caveat": "Distillation требует обучения student; маленькая модель не обязана сохранять все способности teacher.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "rag-paper",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "publisher": "Lewis et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Комбинация параметрической модели с внешним индексом и retrieval; проверяемая опора на найденные документы.",
+      "readScope": "Abstract",
+      "caveat": "Современный RAG шире конкретной архитектуры статьи. Retrieval не гарантирует релевантность или правильную интерпретацию.",
+      "related": [
+        {
+          "title": "Retrieve & Re-Rank",
+          "url": "https://sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html",
+          "readScope": "Retrieve & Re-Rank Pipeline; Bi-Encoder; Cross-Encoder; paragraph example",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "RAG in Transformers",
+          "url": "https://huggingface.co/docs/transformers/model_doc/rag",
+          "readScope": "Introduction; conditioning generation on passages; index updates",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "agent-react",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "publisher": "Yao et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Цикл выбора действия, обращения к инструменту, наблюдения и следующего решения.",
+      "readScope": "Abstract",
+      "caveat": "Учебный симулятор показывает видимые действия и наблюдения; не выдаёт детерминированную цепочку карточек за работающую автономную LLM.",
+      "related": [
+        {
+          "title": "Building effective agents",
+          "url": "https://www.anthropic.com/research/building-effective-agents",
+          "readScope": "What are agents?; When to use agents; Parallelization; Orchestrator-workers; Agents",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "mcp-tools",
+      "title": "Tools — Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+      "publisher": "Model Context Protocol",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Имена инструментов, JSON Schema, tools/list, tools/call, результаты и ошибки. Resources дают контекст, адресованный URI.",
+      "readScope": "User interaction model; capabilities; protocol messages; tool data types",
+      "caveat": "Прочитана версия спецификации 2025-06-18. MCP стандартизует интерфейс, но не создаёт интеллект агента и не делает сервер доверенным.",
+      "related": [
+        {
+          "title": "Resources — Model Context Protocol",
+          "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
+          "readScope": "Resources, URIs, application-driven model; resources/list and resources/read",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "lm-eval",
+      "title": "Language Model Evaluation Harness",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "publisher": "EleutherAI",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Воспроизводимые наборы задач, prompt/config, метрики и сравнение моделей.",
+      "readScope": "README: Overview; Basic Usage; backend table",
+      "caveat": "Игра учит принципам оценки; она не запускает полный lm-evaluation-harness и не присваивает своим мини-задачам статус benchmark.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "llm-judge",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "url": "https://arxiv.org/abs/2306.05685",
+      "publisher": "Zheng et al.",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Ограничения LLM-оценщика: смещение по позиции, многословию, собственной модели и ограничения рассуждений.",
+      "readScope": "Abstract",
+      "caveat": "Оценка по рубрике и сверка с человеком необходимы; результат одного оценщика не абсолютная истина.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "vllm-serving",
+      "title": "OpenAI-Compatible Server",
+      "url": "https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/",
+      "publisher": "vLLM",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "HTTP-serving; /v1/chat/completions; зависимость Chat API от chat template; отличие model weights от inference server. Continuous batching заполняет освободившиеся места запросами между шагами генерации.",
+      "readScope": "Introduction; Supported APIs; extra request parameters",
+      "caveat": "Прочитан интерфейс HTTP, не подтверждена установка vLLM на Windows пользователя. Для игры сервер необязателен; соединение только localhost.",
+      "related": [
+        {
+          "title": "Continuous batching — Transformers",
+          "url": "https://huggingface.co/docs/transformers/continuous_batching",
+          "readScope": "Introduction; scheduling requests at generation steps",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Automatic Prefix Caching",
+          "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+          "readScope": "Introduction; Example workloads; Limits (prefill reuse, not faster decode)",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "skill-feel",
+      "title": "maximizing-game-feel / SKILL.md",
+      "url": "https://github.com/abagames/agentic-gamedev-skills/blob/main/.agents/skills/maximizing-game-feel/SKILL.md",
+      "publisher": "abagames",
+      "kind": "community-skill",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Сдержанная обратная связь, читаемость, честные границы объектов, сохранение отклика.",
+      "readScope": "Полный SKILL.md",
+      "caveat": "Справочный материал; внешние скрипты не установлены и не запускались. Полезен для полировки работающей игры, не заменяет игровой цикл.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "skill-design",
+      "title": "game-design / SKILL.md",
+      "url": "https://github.com/saschb2b/skills/blob/main/skills/productivity/game-design/SKILL.md",
+      "publisher": "saschb2b",
+      "kind": "community-skill",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Осмысленный выбор, самостоятельная ценность core loop, обучение и читаемость интерфейса.",
+      "readScope": "Полный SKILL.md",
+      "caveat": "Не приняты предложения автоматически внедрять hooks/CLAUDE.md, обязательные согласования и категоричные жанровые правила. Использован как критически прочитанная справка.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "skill-browser-feel",
+      "title": "game-feel / SKILL.md",
+      "url": "https://github.com/xhuozhong/codex-game-studio/blob/main/skills/game-feel/SKILL.md",
+      "publisher": "xhuozhong",
+      "kind": "community-skill",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Проверка реальным вводом, отклик перед декором, reduced motion, ограничения browser audio.",
+      "readScope": "Полный SKILL.md",
+      "caveat": "Короткий общий чеклист; не самостоятельная методология и не доказательство качества готовой игры.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "instructgpt-paper",
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/html/2203.02155v1",
+      "publisher": "Ouyang et al., 2022",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Один конкретный RLHF pipeline: SFT demonstrations → preference comparisons/reward model → PPO; границы представительности human feedback.",
+      "readScope": "Abstract; Introduction; §3.1 High-level methodology; начало §5.3 Limitations",
+      "caveat": "Описан метод InstructGPT, а не универсальная обязательная последовательность всех preference methods. Предпочтения оценщиков не равны истине или единому набору человеческих ценностей.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "corrigibility-paper",
+      "title": "Corrigibility",
+      "url": "https://intelligence.org/files/Corrigibility.pdf",
+      "publisher": "Soares et al., AAAI Workshop 2015",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Краткий контекст: система должна допускать исправление и остановку; простая кнопка и лимит цикла не решают общую исследовательскую проблему.",
+      "readScope": "Abstract; §1 Introduction; §1.1 Corrigibility",
+      "caveat": "Теоретическое введение и формальные постановки. В игре только распознавание понятия, без доказательства corrigibility или заявлений о сознании моделей.",
+      "provenance": "Проверенный реестр первой версии (2026-11-16); библиографические поля сохранены."
+    },
+    {
+      "id": "python-control-flow",
+      "title": "More Control Flow Tools",
+      "url": "https://docs.python.org/3.12/tutorial/controlflow.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Условия, циклы, функции и аргументы.",
+      "readScope": "if; for; range; break and continue; defining functions and arguments.",
+      "caveat": "Первый десяток уровней даёт практический фундамент; не обещает исчерпывающее знание каждой конструкции языка.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-classes",
+      "title": "Classes",
+      "url": "https://docs.python.org/3.12/tutorial/classes.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Состояние экземпляра, self, методы, композиция, итераторы.",
+      "readScope": "Introduction; scopes and namespaces; class and instance variables; iterators and generators.",
+      "caveat": "Композиция игровых объектов не равна моделированию полноценной агентной платформы.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-errors",
+      "title": "Errors and Exceptions",
+      "url": "https://docs.python.org/3.12/tutorial/errors.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Различать синтаксическую ошибку и исключение, обработать невалидные входы.",
+      "readScope": "Syntax Errors; Exceptions; Handling Exceptions.",
+      "caveat": "Перехватываются ожидаемые типы ошибок; blanket except не считается корректным исправлением.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-io",
+      "title": "Input and Output",
+      "url": "https://docs.python.org/3.12/tutorial/inputoutput.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Строковое форматирование и чтение текстовых данных.",
+      "readScope": "Fancier Output Formatting; formatted string literals; Reading and Writing Files.",
+      "caveat": "В игре используется виртуальная файловая система Python или StringIO; личные файлы телефона недоступны.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-modules",
+      "title": "Modules",
+      "url": "https://docs.python.org/3.12/tutorial/modules.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Импорт модулей и отдельные пространства имён.",
+      "readScope": "Introduction; import module; from module import name; More on Modules.",
+      "caveat": "Задания используют встроенную стандартную библиотеку, не требуют pip или сети.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-collections",
+      "title": "collections — Container datatypes",
+      "url": "https://docs.python.org/3.12/library/collections.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Выбор deque, Counter и defaultdict для игровых данных.",
+      "readScope": "Container datatype overview and documented purpose of deque/Counter/defaultdict.",
+      "caveat": "deque подходит для очереди; список сохраняется для индексируемой последовательности.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "python-heapq",
+      "title": "heapq — Heap queue algorithm",
+      "url": "https://docs.python.org/3.12/library/heapq.html",
+      "publisher": "Python",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Приоритетная очередь и обслуживание задач.",
+      "readScope": "Heap invariant; heappush; heappop; heapify; merge.",
+      "caveat": "Min-heap возвращает минимальный ключ; одинаковые приоритеты требуют явно заданного разрешения ничьей.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "pyodide-worker",
+      "title": "Using Pyodide in a web worker — 0.26.4",
+      "url": "https://pyodide.org/en/0.26.4/usage/webworker.html",
+      "publisher": "Pyodide",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Настоящий CPython 3.12 в браузерной версии вне UI-потока, сообщения между worker и интерфейсом.",
+      "readScope": "Web Worker setup, loading Pyodide, exchanging messages and namespaces.",
+      "caveat": "Зафиксирована версия 0.26.4: её classic-worker API не следует смешивать с новым module-worker API Pyodide 314.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "pyodide-deploy",
+      "title": "Downloading and deploying Pyodide — 0.26.4",
+      "url": "https://pyodide.org/en/0.26.4/usage/downloading-and-deploying.html",
+      "publisher": "Pyodide",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Локальная поставка core runtime и stdlib для полностью офлайн-запуска.",
+      "readScope": "Core files; local deployment; pyodide.js and pyodide.mjs distinction; pyodide-lock.json.",
+      "caveat": "CDN использован только при сборке. Браузерная версия загружает wasm и stdlib с локального сервера; Android использует отдельный нативный процесс CPython.",
+      "provenance": "Официальная документация, проверена для v2."
+    },
+    {
+      "id": "hf-multimodal",
+      "title": "Multimodal chat templates",
+      "url": "https://huggingface.co/docs/transformers/main/en/chat_templating_multimodal",
+      "publisher": "Hugging Face",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Текст, изображение и звук как разные входы; Processor и multimodal content; ASR и TTS в интерфейсе смартфонного агента.",
+      "readScope": "Multimodal chat templates introduction; ImageTextToTextPipeline; Using apply_chat_template. Related ASR and TTS introduction/pipeline sections.",
+      "caveat": "В APK нет загруженной multimodal LLM, ASR или TTS-модели. Урок объясняет архитектуру и проверку переходов. Код примеров и команды установки документации не запускались; ветка main изменяется.",
+      "provenance": "Официальная документация, разделы проверены для v2.",
+      "related": [
+        {
+          "title": "Automatic speech recognition",
+          "url": "https://huggingface.co/docs/transformers/main/en/tasks/asr",
+          "readScope": "Introduction: speech signal to text; task distinction.",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Text to speech",
+          "url": "https://huggingface.co/docs/transformers/main/en/tasks/text-to-speech",
+          "readScope": "Introduction and text-to-audio / text-to-speech pipeline.",
+          "checkedAt": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "chaquopy-runtime",
+      "title": "Chaquopy licensing and version summary",
+      "url": "https://chaquo.com/chaquopy/license/",
+      "publisher": "Chaquopy",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Бесплатный нативный CPython 3.12.15 в Android через Chaquopy 17.2.0; проверка лицензии и платформенных требований.",
+      "readScope": "Licensing: open-source versions12.0.1+; open-source announcement MIT; version17.2 Python/API compatibility.",
+      "caveat": "Официальная таблица совместимости не заменяет испытание APK. В игре нативные библиотеки arm64-v8a и x86_64; фактическая проверка проводится в x86_64 эмуляторе.",
+      "related": [
+        {
+          "title": "Chaquopy is now open-source",
+          "url": "https://chaquo.com/chaquopy/chaquopy-is-now-open-source/",
+          "readScope": "MIT source license and first open-source release12.0.1",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "title": "Version summary — Chaquopy17.2",
+          "url": "https://chaquo.com/chaquopy/doc/current/versions.html",
+          "readScope": "17.2 supports Python3.10–3.15 and minimum AndroidAPI24",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "provenance": "Официальная документация и объявление проекта, проверены для нативного runtime v2."
+    },
+    {
+      "id": "lensaml-regularization-v2",
+      "title": "LensaML — Regularization",
+      "url": "https://lensaml.com/explainers/regularization",
+      "publisher": "LensaML",
+      "kind": "reference",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Наглядное разделение data loss, penalty и силы регуляризации; эпизод23.",
+      "readScope": "Страница regularization; идея визуального сравнения. Иллюстрации и текст не копировались.",
+      "caveat": "Педагогический ресурс, не первичная спецификация оптимизатора. Формулы и оговорку AdamW проверяют по первичной документации.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "agent-course-mobile-v2",
+      "title": "Agentic AI — Mobile Course",
+      "url": "https://agenticai.varasrinivas.com/courses/opensource/mobile/index.html",
+      "publisher": "Agentic AI Course",
+      "kind": "reference",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Последовательность concept → diagram → pseudocode → pitfall для темы агентов.",
+      "readScope": "Доступный индекс курса и описание карточек; полный набор модулей не проверен.",
+      "caveat": "Внешняя коллекция для углубления. Не заявляется аудит всего курса; обязательное объяснение включено в игру.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "uva-pytorch-v2",
+      "title": "UvA DL — Introduction to PyTorch",
+      "url": "https://uvadlc-notebooks.readthedocs.io/en/latest/tutorial_notebooks/tutorial2/Introduction_to_PyTorch.html",
+      "publisher": "University of Amsterdam / Phillip Lippe",
+      "kind": "teaching",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Связь тензоров, автодифференцирования, модели, batch и проверки; эпизоды33–40.",
+      "readScope": "Introduction; The Basics of PyTorch; The data loader class, batch_size и drop_last.",
+      "caveat": "Большой notebook не встроен; мобильная практика использует стандартную библиотеку Python, без выполнения PyTorch.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "hf-course-v2",
+      "title": "Hugging Face LLM Course — Introduction",
+      "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+      "publisher": "Hugging Face",
+      "kind": "teaching",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Последовательность понятий Transformers/LLM и самостоятельное продолжение теоретического трека.",
+      "readScope": "Вводный раздел курса и структура; не весь курс.",
+      "caveat": "Внешние модели и датасеты не включены; курс может обновляться независимо от APK.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "pandas-alignment-v2",
+      "title": "pandas — Data structures and label alignment",
+      "url": "https://pandas.pydata.org/docs/user_guide/dsintro.html",
+      "publisher": "pandas",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "DataFrame, Series, соответствие по меткам индекса; эпизод17.",
+      "readScope": "Series; Vectorized operations and label alignment; Data alignment and arithmetic.",
+      "caveat": "Числовой пример оригинальный. Поиск по позиции и сопоставление по ID явно различаются; pandas не требуется в мобильном runtime.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "pytorch-dropout-v2",
+      "title": "PyTorch — nn.Dropout",
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.nn.Dropout.html",
+      "publisher": "PyTorch",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Вероятность обнуления, inverted dropout, train/eval; эпизод39.",
+      "readScope": "Описание класса, p, scaling и evaluation. Stable URL при проверке перенаправлялся на версию2.15.",
+      "caveat": "Сравнение no_grad и eval также опирается на сохранённые PyTorch beginner/autograd источники. Не утверждается, что ровно p доля маленького вектора обнулится.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    },
+    {
+      "id": "vllm-prefix-v2",
+      "title": "vLLM — Automatic Prefix Caching",
+      "url": "https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/",
+      "publisher": "vLLM",
+      "kind": "primary",
+      "checkedAt": "2026-11-16",
+      "usedFor": "Различие prefix reuse, prefill и генерации новых токенов; эпизод87.",
+      "readScope": "Introduction; Example workloads; Limits.",
+      "caveat": "Описан механизм, без обещания ускорения любой нагрузки и без привязки к меняющимся CLI-флагам.",
+      "provenance": "Проверка конкретных разделов при переработке V2; авторские объяснения и маленькие примеры."
+    }
+  ]
+}
