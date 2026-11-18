@@ -71,7 +71,10 @@ No registration, advertisements, subscriptions, or paid APIs are required.
 
 ## 🚀 Installation
 
-When an APK is available in GitHub Releases:
+
+Download the current Android preview APK from
+[GitHub Releases](https://github.com/frhaezis/asterion-ml-adventure/releases/tag/v2.1.0).
+
 
 1. Download the Android APK.
 2. Open the downloaded file on your device.
