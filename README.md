@@ -8,6 +8,27 @@ Explore an elven world, meet four distinct characters, make story-driven choices
 
 **Project status:** Experimental Android release — under active development.
 
+
+## 📸 Screenshots
+
+### Explore the World of Asterion
+![Asterion World](screenshots/01-asterion-world.webp)
+
+### Learning Resources
+![Learning Resources](screenshots/02-learning-resources.webp)
+
+### 100 Educational Episodes
+![Learning Chapters](screenshots/03-learning-chapters.webp)
+
+### Interactive Learning
+![Interactive Lesson](screenshots/04-interactive-lesson.webp)
+
+*Screenshots from the current Russian-language edition.
+English localization and UI improvements are planned.*
+
+---
+
+
 ## ✨ Features
 
 - **100 story episodes** across 10 chapters, combining narrative progression with technical learning.
